@@ -33,7 +33,7 @@ do
                 Console.WriteLine($"ingrese datos del Producto {i + 1}: ");
                 Console.WriteLine();
                 Console.Write("Nombre: "); p.nombre = Console.ReadLine();
-                Console.Write("Precio: ");  p.precio = double.Parse(Console.ReadLine());
+                Console.Write("Precio en (Q.): ");  p.precio = double.Parse(Console.ReadLine());
                 Console.Write("cantida en stock: ");  p.cantidad = int.Parse(Console.ReadLine());               
                 productos.Add(p);
                 Console.Clear();
@@ -79,7 +79,7 @@ class Producto
 
     public void MostrarInfo()
     {
-        Console.WriteLine($"nombre: {nombre}  |  Precio unitario: {precio}  |  " +
-            $"cantidad en stock: {cantidad}  |  valor Total del stock: {ValorTproducto()}");
+        Console.WriteLine($"nombre: {nombre}  |  Precio unitario: Q.{precio}  |  " +
+            $"cantidad en stock: {cantidad}  |  valor Total del stock: Q.{ValorTproducto()}");
     }
 }
