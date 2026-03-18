@@ -119,4 +119,5 @@ class Producto
             $"estado del stock: {ObtenerEstado()}  |  valor Total del stock: Q.{ValorTproducto()}");
         Console.WriteLine();
     }
+    j
 }
